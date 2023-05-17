@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;zipcode01.jsp&apos; to &apos;zipcode01.jsp&apos;&#x0D;&#x0A;- Original project: &apos;AjaxZipcodeEx01&apos;&#x0D;&#x0A;- Destination element: &apos;zipcode01.jsp&apos;&#x0D;&#x0A;- Original element: &apos;zipcode01.jsp&apos;" description="Copy file" element1="src/main/webapp/zipcode01.jsp" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1684120373544" target="/AjaxZipcodeEx01/src/main/webapp/zipcode01.jsp" units="0" version="1.0"/>
-</session>

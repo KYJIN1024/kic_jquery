@@ -1,5 +1,0 @@
-INDEX VERSION 1.4+D:\JAVA\kic_jquery\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-4025534413.index
-3945957236.index
-3396606730.index
-810393354.index
