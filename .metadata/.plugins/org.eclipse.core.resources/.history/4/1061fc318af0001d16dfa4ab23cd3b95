@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/xml; charset=UTF-8" 
+pageEncoding="UTF-8" trimDirectiveWhitespaces="true" %>
+<%@ page import="java.sql.*" %>
+<%@ page import="javax.sql.*" %>
+<%@ page import="javax.naming.*" %>
+
+<%
+   conn = dataSource.getConnection();
+   
+   String sql = "select * from books";
+   pstmt = conn.prepareStatement(sql);
+   rs = pstmt.executeQuery;
+   
+   sbXml.append("<book>" );
+   while( rs.next() ) {
+   	sbXml.append( "<book>" );
+   	sbXml.append( "<book>" );
+   	sbXml.append( "<book>" );
+   	sbXml.append( "<book>" );
+   	sbXml.append( "<book>" );
+   	

@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/plain; charset=UTF-8"
+    pageEncoding="UTF-8" trimDirectiveWhitespaces="true" %>
+
+<%@ page import="org.json.simple.JSONArray" %>
+<%@ page import="org.json.simple.JSONObject" %>
+
+<%
+	JSONObject obj = new JSONObject();
+	obj.put( "name" , "책이름" );
+	obj.put( "publisher" , "출판사" );
+	obj.put( "author" , "저자" );
+	obj.put( "price" , "가격" );
+
+	out.println(obj);
+
+
+
+%>

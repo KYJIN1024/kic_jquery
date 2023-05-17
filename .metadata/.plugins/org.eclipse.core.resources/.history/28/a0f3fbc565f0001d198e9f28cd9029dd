@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/xml; charset=UTF-8"
+    pageEncoding="UTF-8" trimDirectiveWhitespaces="true"%>
+<%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<sql:setDataSource var="snapshot" driver="com.mysql.cj.jdbc.Driver"
+     url="jdbc:mysql://localhost:3306/project"
+     user="project" password="1234" />
+     
+<sql:query var="result" dataSource="${snapshot}">
+    SELECT * FROM books;
+</sql:query>
+
+<books>
+    <c:forEach var="row" items="${result.rows}">
+        <book>
+            <seq>${row.seq}</seq>
+            <name>${row.name}</name>
+            <publisher>${row.publisher}</publisher>
+            <author>${row.author}</author>
+            <price>${row.price}</price>
+        </book>
+    </c:forEach>
+</books>

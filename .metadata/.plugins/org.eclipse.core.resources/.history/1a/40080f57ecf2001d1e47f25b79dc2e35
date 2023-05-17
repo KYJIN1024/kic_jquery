@@ -1,0 +1,58 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script> 
+	// window.jquery => jquery => $ (축약된표현) 
+	$( document ).ready(function(){
+			$( 'table' ).css('width', '800' );
+			
+			$( 'tr:odd' ).css('background-color', 'blue' );
+			$( 'tr:even' ).css('background-color', 'red' );
+	});
+	
+	
+</script>
+	
+</head>
+<body>
+
+<table> 
+<tr>
+	<th>이름</th>
+	<th>혈액</th>
+	<th>지역</th>
+</tr>
+<tr>
+	<th>tester1</th>
+	<th>o형</th>
+	<th>부천</th>
+</tr>
+<tr>
+	<th>tester2</th>
+	<th>a형</th>
+	<th>부천</th>
+</tr>
+<tr>
+	<th>tester3</th>
+	<th>b형</th>
+	<th>부천</th>
+</tr>
+<tr>
+	<th>tester4</th>
+	<th>ab형</th>
+	<th>부천</th>
+</tr>
+
+
+
+</table>
+
+</body>
+</html>

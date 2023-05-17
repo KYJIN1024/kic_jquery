@@ -1,0 +1,34 @@
+<%@ page language="java" contentType="text/plain; charset=UTF-8"
+    pageEncoding="UTF-8" trimDirectiveWhitespaces="true" %>
+
+<%@ page import="org.json.simple.JSONArray" %>
+<%@ page import="org.json.simple.JSONObject" %>
+<%@ page import="java.sql.*" %>
+
+<%
+    String url = "jdbc:mysql://localhost:3306/project";
+    String user = "project";
+    String password = "1234";
+
+    Connection conn = DriverManager.getConnection(url, user, password);
+    Statement stmt = conn.createStatement();
+    String sql = "SELECT * FROM books";
+    ResultSet rs = stmt.executeQuery(sql);
+
+    JSONArray arr = new JSONArray();
+
+    while(rs.next()) {
+        JSONObject obj = new JSONObject();
+        obj.put("name", rs.getString("name"));
+        obj.put("publisher", rs.getString("publisher"));
+        obj.put("author", rs.getString("author"));
+        obj.put("price", rs.getString("price"));
+
+        arr.add(obj);
+    }
+    out.println(arr);
+
+    rs.close();
+    stmt.close();
+    conn.close();
+%>

@@ -1,0 +1,42 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script> 
+	$(document).ready(function(){
+		
+		let html = '<table>';
+		$( xmlData ).find( 'book' ).each( function() {
+			html += '<tr>';
+			html += '<td>' + $(this).find( 'name' ).text() + '</td>';
+			html += '<td>' + $(this).find( 'publisher' ).text() + '</td>';
+			html += '<td>' + $(this).find( 'author' ).text() + '</td>';
+			html += '<td>' + $(this).find( 'price' ).text() + '</td>';
+			html += '</tr>';
+		});
+		html += '</table>';
+			
+		$('#result').html(html);	
+		},
+		error: function(err) {
+		console.log( '실패', err.status );
+		
+					}
+				});
+			});
+</script>
+</head>
+<body>
+
+
+<button id="btn" />요청</button><br /><br /> 
+
+
+</body>
+</html>

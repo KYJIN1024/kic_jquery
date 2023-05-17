@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="./css/base/jquery-ui.css" />
+<style>
+	/* 사용자 스타일 */
+	body { font-size: 80%; }
+</style>
+
+
+<script src="./js/jquery-3.7.0.js"> </script>
+<script src="./js/jquery-ui.js"> </script>
+<script>
+$( document ).ready( function(){
+	$('#slider').slider({
+		//orientation: 'vertical'
+		value : 50,
+		min: 0, 
+		max: 200,
+		step: 20,
+		slider: function( event, ui ) {
+			console.log('slide :', $(this).slider('value') );
+			console.log('slide :', ui.value );
+		}
+	});
+
+</script>
+</head>
+<body>
+
+<div id="slider"></div>
+<div id="slider2"></div>
+<div id="slider3"></div>
+<br /><hr /><br/>
+</body>
+</html>

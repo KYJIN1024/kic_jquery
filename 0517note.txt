@@ -1,0 +1,63 @@
+jQuery Core
+	1. dom
+		쉽게
+	2. event
+		쉽게
+	3. ajax
+	4. animation
+
+
+		=>ui
+			desktop - jQuery UI
+			moblie  - jQuery Mobile(x)
+			
+				tablet
+				smartphone
+
+jQuery UI - API
+	 Swing - java
+
+
+jquery 로 우편번호 만들기
+
+1.protocol
+		xml(*)
+		json
+2.서버 프로그램
+		model1방식
+				sido.jsp
+				gugun.jsp
+				dong.jsp
+				address.jsp
+3.javascript 코딩
+
+
+
+시도 		없음 			sido.jsp
+		<address>
+			<sido></sido>
+		...
+		</address>
+구군		시도			gugun.jsp
+		<address>
+			<gugun></gugun>
+
+동 		시도 구군 		dong.jsp
+		<address>
+			<address>
+				<zipcode></zipcode>
+			<dong></dong>
+
+우편번호 	시도/구군/동  	address.jsp
+		<addresses>
+			<address>
+				<zipcode></zipcode>
+				..
+				<bunji></bunji>
+			<address>
+		</address>
+
+
+		
+
+

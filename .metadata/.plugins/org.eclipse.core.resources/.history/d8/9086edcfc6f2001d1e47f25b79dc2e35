@@ -1,0 +1,23 @@
+package model1;
+
+import java.util.ArrayList;
+
+public class ZipcodeDAO {
+	
+	public ZipcodeDAO( ) {
+		
+		
+		
+	}
+	
+	public ArrayList<ZipcodeTO> zipcodeList(String strDong) {
+		
+		
+		
+		
+		
+		return null;
+	
+	}
+
+}
